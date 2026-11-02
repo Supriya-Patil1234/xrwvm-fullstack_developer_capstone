@@ -1,6 +1,17 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .about-intro { padding: 10px 30px 20px; text-align: center; color: #333; }
+    .team-row { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 20px; margin: auto; padding-bottom: 20px; }
+    .team-card { width: 30%; min-width: 230px; }
+    .team-photo { width: 100%; height: 260px; object-fit: cover; border-radius: 6px 6px 0 0; }
+    .team-role { color: #00a8ab; font-weight: 600; }
+    .stats-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px; background: #f4fbfb; border-top: 1px solid #ddd; text-align: center; }
+    .stats-row h3 { margin: 0; color: #00a8ab; }
+    .stats-row p { margin: 0; color: #555; }
+  </style>
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -24,45 +35,65 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+
+  <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header">
+      <h1>About Us</h1>
+      Welcome to Best Cars dealership, home to the best cars in North America.
+    </div>
+
+    <div class="about-intro">
+      <p>
+        Founded in 2005, Best Cars has grown from a single showroom in Chicago into a network
+        of more than 40 dealerships across the United States and Canada. We sell new, certified
+        pre-owned and imported vehicles at honest, reasonable prices, and every customer review
+        helps us improve.
+      </p>
+      <p>
+        Our promise is simple: transparent pricing, no hidden fees, and a team that treats
+        you like family. Meet the people behind the dealership below.
+      </p>
+    </div>
+
+    <div class="team-row">
+      <div class="card team-card">
+        <img class="team-photo" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul Sharma">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">Rahul Sharma</p>
+          <p class="team-role">Sales Manager</p>
+          <p class="card-text">Rahul has 12 years of experience helping families find the right car. He leads our sales team and is known for his patient, no-pressure approach.</p>
+          <p>rahul.sharma@bestcars.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card team-card">
+        <img class="team-photo" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Patel">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">Priya Patel</p>
+          <p class="team-role">Head of Service</p>
+          <p class="card-text">Priya manages our certified service centre and ensures every vehicle leaves in perfect condition. She trained as a mechanical engineer before joining us in 2014.</p>
+          <p>priya.patel@bestcars.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card team-card">
+        <img class="team-photo" src="https://randomuser.me/api/portraits/men/65.jpg" alt="Amit Verma">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">Amit Verma</p>
+          <p class="team-role">Finance Advisor</p>
+          <p class="card-text">Amit helps customers compare loans, leasing and insurance plans. He makes financing simple and makes sure you understand every number before you sign.</p>
+          <p>amit.verma@bestcars.com</p>
         </div>
       </div>
     </div>
+
+    <div class="stats-row">
+      <div><h3>40+</h3><p>Dealerships</p></div>
+      <div><h3>150,000+</h3><p>Cars sold</p></div>
+      <div><h3>4.8 / 5</h3><p>Average customer rating</p></div>
+      <div><h3>20 years</h3><p>In business</p></div>
     </div>
-    </div>
-    
+  </div>
 </div>
 
 </html>
